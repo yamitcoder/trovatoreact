@@ -1,0 +1,24 @@
+.img-carrito {
+    width: 30px;
+  }
+
+.badge {
+  background-color: blueviolet;
+  color: white;
+  font-size: 12px;
+  margin-left: -5px;
+  margin-bottom: -25px;
+  padding: 0.1rem;
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-car {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

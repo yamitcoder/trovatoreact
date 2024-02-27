@@ -1,0 +1,12 @@
+.container-list {
+    width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.lisyt-h1 {
+    margin: 1rem 0;
+}

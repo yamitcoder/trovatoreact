@@ -1,0 +1,24 @@
+ /*NAV*/
+ .nav {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  max-width: 180px;
+ }
+
+ .nav-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+
+.item-li:hover {
+  color: blueviolet;
+}
