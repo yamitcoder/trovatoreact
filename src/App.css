@@ -12,3 +12,9 @@ a {
   ol, ul {
     padding-left: 0;
   }
+
+  .index {
+    background-color: #f9f9f9;
+    padding: 1rem 0 2rem 0;
+  }
+

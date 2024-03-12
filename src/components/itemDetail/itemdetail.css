@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+.caja-details {
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.details{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.grid { 
+    background-color: white;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imagen-detail{
+    max-width: auto;
+    height: 500px;
+    background-position: center;
+}
+
+.categoria-detail{
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: #ececec;
+    max-width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.titulo-detail {
+    font-family: "Rubik", sans-serif;
+    font-size: 36px;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 0 0 3rem 0;
+}
+
+.precio-detail {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    margin: 0; 
+}
+
+.d-1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    margin: 0 0 0.5rem 0;
+}
+
+.d-2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    color: rgb(160, 160, 160);
+}
+
+
+.descripcion-detail{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    margin-top: 2rem ;  
+}
+
+.texto-descripcion{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.titulo-descipcion {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.duracion-detail {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.icon-duracion {
+width: 30px;
+}
+
+.duracion {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}

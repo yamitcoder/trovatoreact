@@ -1,17 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+ 
  /*NAV*/
  .nav {
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 1rem auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   max-width: 180px;
+  
  }
 
  .nav-li {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

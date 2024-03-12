@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+.count {
+    margin: 2rem 0;
+}
+
+.count-restar {
+    background-color: #4300d2;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.count-sumar {
+    background-color: #4300d2;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.contador {
+    position: static;
+    border-radius: 5px;
+    border: 2px solid #e2e2e2;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 50px;
+    margin: 0 10px;
+    
+}
+
+.comprar {
+    background-color: white;
+    border: 2px solid #4300d2;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    color: #4300d2;
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .5s;
+
+}
+
+.comprar:hover {
+    background-color: #4300d2;
+    color: white;
+}
