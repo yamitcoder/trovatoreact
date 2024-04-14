@@ -10,13 +10,13 @@ Se trata de una aplicacion de viajes.
 - Ejecute npm install para instalar dependencias
 - Ejecute npm start para levantar el proyecto de manera local
 
-  ### Version Host
+### Version Host
   [Despegar]()
 
-  ### Librerias utilizadas
-  - [Firebase](https://firebase.google.com/?hl=es): Utilizada como base de datos para el proyecto.
-  - [React Router Dom](https://www.npmjs.com/): Libreria de navegación por rutas
-  - [React Spinners](https://www.davidhu.io/react-spinners/): Libreria de componentes Spinners
+### Librerias utilizadas
+- [Firebase](https://firebase.google.com/?hl=es): Utilizada como base de datos para el proyecto.
+- [React Router Dom](https://www.npmjs.com/): Libreria de navegación por rutas
+- [React Spinners](https://www.davidhu.io/react-spinners/): Libreria de componentes Spinners
 
-  # Desarrollado por Yamila Trovato
+# Desarrollado por Yamila Trovato
   
