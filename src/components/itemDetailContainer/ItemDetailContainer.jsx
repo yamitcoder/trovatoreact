@@ -1,9 +1,10 @@
-import React from "react";
+    import React from "react";
 import {useEffect, useState} from 'react'
-import { getProducts } from "../../mock/fakeApi"
 import ItemDetail from "../itemDetail/ItemDetail"
 import { useParams } from "react-router-dom";
-
+import Loader from "../loader/Loader";
+import { collection, doc, getDoc } from 'firebase/firestore'
+import { db } from '../../service/firebase'
 
 const ItemDetailContainer = () => {
 
@@ -13,20 +14,20 @@ const ItemDetailContainer = () => {
     
 
     useEffect(()=>{
-    setcargando(true)
-    getProducts()
-        .then((res)=> setDetalle(res.find((item)=> item.id === itemId)))
-        .catch((error)=> console.log(error, "Hubo un problema, intenten más tarde"))
+        setcargando(true)
+        const collectionDesp = collection(db, "despegar")
+        const referenciaDoc = doc(collectionDesp, itemId)
+        getDoc(referenciaDoc)
+        .then((res)=> setDetalle({id:res.id, ...res.data()}))
+        .catch((error)=> console.log(error))
         .finally(()=> setcargando(false))
+
     },[itemId])
 
-    if(cargando){
-        return <div className='loading'> <h3>Cargando detalle...</h3> </div>
-    }
 
     return (
         <div>
-            <ItemDetail detalle={detalle}/>
+            { cargando ? <Loader/> : <ItemDetail detalle={detalle}/>}
         </div>
     )
 }

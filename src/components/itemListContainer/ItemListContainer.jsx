@@ -2,9 +2,11 @@ import React from 'react'
 
 import './itemlistcontainer.css'
 import {useEffect, useState} from 'react'
-import {getProducts} from '../../mock/fakeApi'
 import ItemList from "../itemList/ItemList"
 import { useParams } from "react-router-dom";
+import Loader from '../loader/Loader'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../../service/firebase'
 
 function ItemListContainer({greeting}) {
 
@@ -15,22 +17,24 @@ function ItemListContainer({greeting}) {
 
     useEffect(()=>{
         setLoading(true)
+        const viajesCollection = categoryId ? query(collection(db, "despegar"), where("categoria", "==", categoryId)) : collection(db, "despegar")
 
-        getProducts()
-        .then((res)=> {
-            if(categoryId){
-                setProductos(res.filter((prod)=> prod.categoria === categoryId))
-            }else{
-                setProductos(res)  
-            }
+        getDocs(viajesCollection)
+        .then((res)=>{
+            const list = res.docs.map((viajes)=>{
+                return{
+                    id:viajes.id,
+                    ...viajes.data()
+                }
+            })
+        setProductos(list)
         })
-
-        .catch((error)=> console.log(error, "Todo mal"))
+        .catch((error)=> console.log(error))
         .finally(()=> setLoading(false))
     },[categoryId])
 
     if(loading){
-        return <div className='loading'> <h3>Cargando Productos...</h3> </div>
+        return <Loader/> 
     }
 
     return(

@@ -1,15 +1,24 @@
-import React from "react"
-import { useCounter } from "../hooks/useCounter"
+import React from 'react'
+import {useState} from 'react'
 import './count.css'
 
-const ItemCount = ({stock}) =>{
-    const {count, restar, sumar}= useCounter(stock)
+const ItemCount = ({stock, onAdd}) =>{
+    const [count, setCount]= useState(0)
 
-    const onAdd = () =>{
-        if(stock > 0 ){
-        } else {
-            alert("No Hay Stock")
+    const sumar = () =>{
+        if(count < stock){
+            setCount(count + 1)
         }
+    }
+    const restar = () => {
+        if(count > 0){
+
+            setCount(count -1)
+        }
+    }
+
+    const enviarCantidad = () =>{
+        onAdd(count)
     }
 
     return (
@@ -20,7 +29,7 @@ const ItemCount = ({stock}) =>{
             <button className="count-sumar" onClick={sumar}>+</button>
         </div>
 
-        <button className="comprar" onClick={onAdd}>Comprar</button>
+        {<button className="comprar" disabled={stock === 0 || count === 0} onClick={enviarCantidad}>Comprar</button>}
         </>
     )
 

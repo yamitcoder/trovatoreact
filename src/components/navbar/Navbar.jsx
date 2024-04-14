@@ -18,7 +18,9 @@ const Navbar = () =>{
             </ul>
             </div>
 
-            <CartWidget/>
+            <NavLink to="/cart">
+                <CartWidget counter={15}/>
+            </NavLink>
 
       </nav>
     );

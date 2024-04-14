@@ -14,7 +14,7 @@ const productos = [
     {   
         id:"2",
         name: "Ciudad de Madrid",
-        stock:10,
+        stock:2,
         precio:125300,
         introduccion:"Puntos panoramicos de la bella madrid",
         descripcion: "Explora cómodamente la ciudad a bordo de un autobús turístico de 2 pisos. Descubre la ciudad al detalle con un mismo ticket. Sube y baja de nuestros autobuses tantas veces como desees y disfruta de Madrid a tu aire.La ruta 1 (azul) te llevará a conocer el Madrid Histórico. Este recorrido circular comprende un completo circuito histórico, artístico y monumental en el que visitarás los puntos de referencia de la ciudad. Recorre el precioso arbolado del Paseo del Prado y admira las magníficas joyas arquitectónicas del legado de la realeza de los Austrias. Acércate al Triángulo del Arte de Madrid y aprovecha para explorar a fondo algunos de sus museos. Disfruta de las vistas desde el Palacio Real hasta el Templo de Debod.",
@@ -57,6 +57,45 @@ const productos = [
         categoria:"Circuitos",
         duracion: "3 Hs."
     },
+
+    {   
+        id:"6",
+        name: "Visita del Louvre y crucero por el Rio Sena",
+        stock:20,
+        precio:100828,
+        introduccion:"Louvre y crucero por el Rio Sena con Acceso Prioritario",
+        descripcion: "Viva París en todo su esplendor con este paquete, que combina las maravillas culturales del Louvre con la encantadora belleza de un crucero por el Sena. Embárquese en un viaje a través del arte y la historia mientras explora a su aire el mundialmente conocido Museo del Louvre. Pasee por las grandes salas adornadas con obras maestras de valor incalculable, desde la icónica Mona Lisa hasta la majestuosa Venus de Milo. Piérdase en el laberinto de galerías que albergan miles de años de creatividad humana, desde artefactos antiguos hasta tesoros renacentistas.",
+        imagen:"../img/loure.jpg",
+        categoria:"Circuitos",
+        duracion: "10 Hs."
+    },
+
+    {   
+        id:"7",
+        name: "City tour Hop on Hop off Madrid",
+        stock:10,
+        precio:48707,
+        introduccion:"Explora cómodamente la ciudad a bordo de un autobús turístico de 2 pisos",
+        descripcion: "Descubre la ciudad al detalle con un mismo ticket. Sube y baja de nuestros autobuses tantas veces como desees y disfruta de Madrid a tu aire. La ruta 1 (azul) te llevará a conocer el Madrid Histórico. Este recorrido circular comprende un completo circuito histórico, artístico y monumental en el que visitarás los puntos de referencia de la ciudad. Recorre el precioso arbolado del Paseo del Prado y admira las magníficas joyas arquitectónicas del legado de la realeza de los Austrias. Acércate al Triángulo del Arte de Madrid y aprovecha para explorar a fondo algunos de sus museos. Disfruta de las vistas desde el Palacio Real hasta el Templo de Debod.",
+        imagen:"../img/madrid-2.jpg",
+        categoria:"Circuitos",
+        duracion: "5 Hs."
+    },
+
+    {   
+        id:"8",
+        name: "Punta Cana",
+        stock:10,
+        precio:1193908,
+        introduccion:"Paquete a Punta Cana All Inclusive con vuelo incluido",
+        descripcion: "Sólo para adultos, el Riu Repùblica - Adults Only - All Inclusive se encuentra en Punta Cana, en la Playa Arena Gorda. El hotel dispone de 8 piscinas, siendo 2 de reborde infinito, además de bañera de hidromasaje y régimen all inclusive 24h.El Hotel Riu Republica Punta Cana posee 9 restaurantes con especialidades culinarias asiáticas, español, india, italiana y gourmet. La propiedad también ofrece el desayuno en el estilo continental y el huésped cuenta con 10 bares y opción de cenas románticas.",
+        imagen:"../img/puntacana.jpg",
+        categoria:"Paquetes",
+        duracion: "15 dias."
+    },
+
+
+
 ]
 
 export const getProducts = () => {

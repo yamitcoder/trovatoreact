@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+
+.cart-view {
+    max-width: 1300px;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Rubik", sans-serif;
+    font-size: 32px;
+}
+
+.model {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    padding: 2rem;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.img-view {
+    width: 200px;
+}
+
+.name-view {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px; 
+    font-weight: 500;
+}
+
+.quantity-view {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+}
+
+.precio-view {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+}
+
+.total-view {
+    font-family: "Rubik", sans-serif;
+    color: #550fed;
+    font-size: 16px; 
+    font-weight: 500; 
+}
+
+.remove {
+    background-image: src="../papelera.svg";
+    background-color: white;
+    border: 0;
+}
+
+.pagar {
+    font-family: "Rubik", sans-serif;
+    color: #fa503f;
+    font-size: 28px; 
+    font-weight: 600;  
+}
+
+.vaciar {
+    width: 200px;
+    border-radius: 40px;
+    background-color: #fa503f;
+    border: 0;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 16x; 
+    font-weight: 500;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.vaciar:hover {
+    background-color: #550fed;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap:2rem
+}
+
+.finalizar{
+    background-color: white;
+    border: 2px solid #4300d2;
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: #4300d2;
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 25px;
+    align-items: center;
+    transition: .5s;
+}
+
+.finalizar:hover {
+    background-color: #4300d2;
+    color: white;
+}

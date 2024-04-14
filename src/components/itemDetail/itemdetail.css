@@ -108,3 +108,42 @@ width: 30px;
     line-height: 22px;
     font-weight: 500;
 }
+
+.agregaste {
+    font-family: "Rubik", sans-serif;
+    color: #fa503f;;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.carrito {
+    
+    background-color: white;
+    border: 2px solid #4300d2;
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: #4300d2;
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.carrito:hover {
+    background-color: #4300d2;
+    color: white;
+}
+
+.apurate {
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    background-color: #fa503f;
+    max-width: fit-content;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;   
+}

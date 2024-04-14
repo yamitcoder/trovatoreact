@@ -1,0 +1,99 @@
+.checkout{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.h3-checkout {
+    font-family: "Rubik", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 3rem 0 0 0 ;
+}
+
+.p-checkout {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin:  10px 0 50px 0;
+}
+
+.form-checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.input{
+    width: 400px;
+    height: 15px;
+    border-radius: 30px;
+    border: 1px solid #4300d2;
+    padding: 15px;
+    font-family: "Rubik", sans-serif;
+    font-size: 14px;
+}
+
+.submit{
+    width: 430px;
+    border-radius: 40px;
+    background-color: #4300d2;
+    border: 0;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px; 
+    font-weight: 500;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5s;
+}
+
+.submit:hover {
+    background-color: #fa503f;
+}
+
+.orden{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.h4-orden {
+    font-family: "Rubik", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 3rem 0 0 0 ;  
+}
+
+.h5-orden {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin:  10px 0 50px 0;
+}
+
+.volver{
+    background-color: white;
+    border: 2px solid #4300d2;
+    padding: 10px 40px;
+    border-radius: 40px;
+    color: #4300d2;
+    font-family: "Rubik", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    align-items: center;
+    transition: .5s;
+}
+
+.volver:hover {
+    background-color: #4300d2;
+    color: white;
+}

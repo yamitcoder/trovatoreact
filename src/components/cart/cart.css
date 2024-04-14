@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+.cart {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.botom {
+    
+    border-radius: 40px;
+    background-color: #fa503f;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 16x; 
+    font-weight: 500;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+}
+
+.botom:hover {
+    background-color: #550fed;
+}
