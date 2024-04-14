@@ -65,7 +65,7 @@ const Checkout = () =>{
         </div>
         :
         <div className="checkout">
-            <h3 className="h3-checkout-">Completá el formulario</h3>
+            <h3 className="h3-checkout">Completá el formulario</h3>
             <p className="p-checkout">Estás a un paso de terminar tu compra</p>
             <form className="form-checkout" action="" onSubmit={finalizarCompra}>
 
